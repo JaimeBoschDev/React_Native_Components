@@ -3,14 +3,19 @@ import {StyleSheet, Text, View} from 'react-native';
 import {MenuItem} from '../Interfaces/appInterfaces';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {TouchableOpacity} from 'react-native-gesture-handler';
+import {useNavigation} from '@react-navigation/native';
 
 interface Props {
   menuItem: MenuItem;
 }
 
 export const FlatListMenuItem = ({menuItem}: Props) => {
+  const navigation = useNavigation();
+
   return (
-    <TouchableOpacity activeOpacity={0.6}>
+    <TouchableOpacity
+      onPress={() => navigation.navigate(menuItem.page as never)}
+      activeOpacity={0.6}>
       <View style={styles.container}>
         <Icon
           style={styles.iconItem}

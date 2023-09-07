@@ -7,12 +7,12 @@ const MenuItems = [
   {
     name: 'Animation ',
     icon: 'beer-outline',
-    page: 'Page 1',
+    page: 'Animation1',
   },
   {
     name: 'Animation 2',
     icon: 'apps-outline',
-    page: 'Page 2',
+    page: 'Animation2',
   },
 ];
 
