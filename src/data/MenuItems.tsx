@@ -19,4 +19,9 @@ export const MenuItems = [
     icon: 'alert-circle-outline',
     page: 'AlertScreen',
   },
+  {
+    name: 'Text Inputs',
+    icon: 'chatbox-ellipses-outline',
+    page: 'TextInputScreen',
+  },
 ];
