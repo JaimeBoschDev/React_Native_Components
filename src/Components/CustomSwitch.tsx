@@ -4,14 +4,14 @@ import {Platform, StyleSheet, Switch, Text, View} from 'react-native';
 interface Props {
   labelText?: String;
   isOn: boolean;
-  onChange: () => void;
+  onChange: (value: boolean) => void;
 }
 
 export const CustomSwitch = ({isOn, labelText, onChange}: Props) => {
   const [isEnabled, setIsEnabled] = useState(isOn);
   const toggleSwitch = () => {
-    setIsEnabled(previousState => !previousState);
-    onChange();
+    setIsEnabled(!isEnabled);
+    onChange(!isEnabled);
   };
 
   return (
