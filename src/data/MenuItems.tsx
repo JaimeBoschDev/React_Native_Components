@@ -24,4 +24,14 @@ export const MenuItems = [
     icon: 'chatbox-ellipses-outline',
     page: 'TextInputScreen',
   },
+  {
+    name: 'Pull to Refresh',
+    icon: 'refresh-outline',
+    page: 'PulltoRefreshScreen',
+  },
+  {
+    name: 'Section List ',
+    icon: 'list-outline',
+    page: 'SectionListScreen',
+  },
 ];
