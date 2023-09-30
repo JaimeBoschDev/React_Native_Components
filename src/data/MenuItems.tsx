@@ -34,4 +34,14 @@ export const MenuItems = [
     icon: 'list-outline',
     page: 'SectionListScreen',
   },
+  {
+    name: 'Modal Item ',
+    icon: 'albums-outline',
+    page: 'ModalScreen',
+  },
+  {
+    name: 'Inifinite Scrool',
+    icon: 'swap-vertical-outline',
+    page: 'ScrollInfiniteScreen',
+  },
 ];
